@@ -1,0 +1,45 @@
+name: gitbook-action
+on:                                 #在master分支上进行push时触发  
+  push:
+    branches:
+    - master
+
+jobs:
+  build-push:
+    runs-on: ubuntu-latest
+        
+    steps:                          
+    - name: checkout master
+      uses: actions/checkout@v2
+      with:
+        ref: master
+            
+    - name: install nodejs
+      uses: actions/setup-node@v1
+      
+    - name: configue gitbook
+      run: |
+        npm install -g gitbook-cli          
+        gitbook install
+                
+    - name: generate _book folder
+      run: |
+        gitbook build
+        cp README.md _book
+                
+    - name: deploy _book to other repository 
+      env:
+        TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        REF: github.com/relax-space/relax-space.github.io         # 记得修改为自己的目标版本库
+        MYEMAIL: xiaoxm_001@163.com                               # 记得修改为自己邮箱
+        MYNAME: ${{github.repository_owner}}          
+      run: |
+        cd _book
+        git config --global user.email "${MYEMAIL}"
+        git config --global user.name "${MYNAME}"
+        git init
+        git remote add origin https://${REF}
+        git add . 
+        git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
+        git branch -M master
+        git push --force --quiet "https://${TOKEN}@${REF}" master
