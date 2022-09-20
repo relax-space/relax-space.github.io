@@ -1,0 +1,1141 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>正则 · relax space</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="relax space <xiaoxm_001@outlook.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../serialize/m1.html" />
+    
+    
+    <link rel="prev" href="../set/m1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    relax-space
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../tech/">
+            
+                <a href="../../tech/">
+            
+                    
+                    技术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../tech/mysql/m1.html">
+            
+                <a href="../../tech/mysql/m1.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../tech/rocketmq/m1.html">
+            
+                <a href="../../tech/rocketmq/m1.html">
+            
+                    
+                    rocketmq
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../tool/">
+            
+                <a href="../../tool/">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../tool/git/m1.html">
+            
+                <a href="../../tool/git/m1.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../tool/git/rebase/m1.html">
+            
+                <a href="../../tool/git/rebase/m1.html">
+            
+                    
+                    rebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../tool/idea/m1.html">
+            
+                <a href="../../tool/idea/m1.html">
+            
+                    
+                    idea
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../tool/idea/jrebel/m1.html">
+            
+                <a href="../../tool/idea/jrebel/m1.html">
+            
+                    
+                    jrebel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../tool/idea/git/m1.html">
+            
+                <a href="../../tool/idea/git/m1.html">
+            
+                    
+                    git本地改变
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../tool/navicat/m1.html">
+            
+                <a href="../../tool/navicat/m1.html">
+            
+                    
+                    navicat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../tool/system/m1.html">
+            
+                <a href="../../tool/system/m1.html">
+            
+                    
+                    system
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../tool/system/proxy/m1.html">
+            
+                <a href="../../tool/system/proxy/m1.html">
+            
+                    
+                    代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../../tool/system/ssh/m1.html">
+            
+                <a href="../../tool/system/ssh/m1.html">
+            
+                    
+                    ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../../tool/system/hotkey.html">
+            
+                <a href="../../tool/system/hotkey.html">
+            
+                    
+                    快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../tool/vscode/m1.html">
+            
+                <a href="../../tool/vscode/m1.html">
+            
+                    
+                    vscode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../../tool/vscode/case/m1.html">
+            
+                <a href="../../tool/vscode/case/m1.html">
+            
+                    
+                    大小写快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../../tool/vscode/proxy/m1.html">
+            
+                <a href="../../tool/vscode/proxy/m1.html">
+            
+                    
+                    代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../tool/windows/m1.html">
+            
+                <a href="../../tool/windows/m1.html">
+            
+                    
+                    windows
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../../tool/windows/ipSwitch/m1.html">
+            
+                <a href="../../tool/windows/ipSwitch/m1.html">
+            
+                    
+                    ip切换工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../../tool/windows/pin/m1.html">
+            
+                <a href="../../tool/windows/pin/m1.html">
+            
+                    
+                    pin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../../tool/windows/time/m1.html">
+            
+                <a href="../../tool/windows/time/m1.html">
+            
+                    
+                    自动同步时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../docker/">
+            
+                <a href="../../docker/">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../docker/it/m1.html">
+            
+                <a href="../../docker/it/m1.html">
+            
+                    
+                    it命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../java/">
+            
+                <a href="../../java/">
+            
+                    
+                    java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../java/maven/m1.html">
+            
+                <a href="../../java/maven/m1.html">
+            
+                    
+                    maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../java/fastjson/m1.html">
+            
+                <a href="../../java/fastjson/m1.html">
+            
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../java/base1/m1.html">
+            
+                <a href="../../java/base1/m1.html">
+            
+                    
+                    基础1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../source/m1.html">
+            
+                <a href="../source/m1.html">
+            
+                    
+                    清华源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../zone/m1.html">
+            
+                <a href="../zone/m1.html">
+            
+                    
+                    时区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../email/m1.html">
+            
+                <a href="../email/m1.html">
+            
+                    
+                    邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../str/m1.html">
+            
+                <a href="../str/m1.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../param/m1.html">
+            
+                <a href="../param/m1.html">
+            
+                    
+                    参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../dict/m1.html">
+            
+                <a href="../dict/m1.html">
+            
+                    
+                    字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../list/m1.html">
+            
+                <a href="../list/m1.html">
+            
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../set/m1.html">
+            
+                <a href="../set/m1.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.9" data-path="m1.html">
+            
+                <a href="m1.html">
+            
+                    
+                    正则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../serialize/m1.html">
+            
+                <a href="../serialize/m1.html">
+            
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../pypy/m1.html">
+            
+                <a href="../pypy/m1.html">
+            
+                    
+                    pypy安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../golang/">
+            
+                <a href="../../golang/">
+            
+                    
+                    golang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../golang/hello/m1.html">
+            
+                <a href="../../golang/hello/m1.html">
+            
+                    
+                    hello
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../golang/speed/m1.html">
+            
+                <a href="../../golang/speed/m1.html">
+            
+                    
+                    加速
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../golang/hello-mod/m1.html">
+            
+                <a href="../../golang/hello-mod/m1.html">
+            
+                    
+                    hello-mod
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../vip/">
+            
+                <a href="../../vip/">
+            
+                    
+                    vip
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >正则</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="re">re</h1>
+<h2 id="&#x57FA;&#x672C;&#x4F7F;&#x7528;">&#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
+<pre><code class="lang-python"><span class="hljs-string">&apos;&apos;&apos;
+
+. \w \s \d a|b () [...] {} * + 
+
+1. &#x5E38;&#x7528;&#x5143;&#x5B57;&#x7B26;
+
+.   &#x5339;&#x914D;&#x9664;&#x6362;&#x884C;&#x7B26;&#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26;
+\w  &#x5339;&#x914D;&#x5B57;&#x6BCD;&#x6216;&#x6570;&#x5B57;&#x6216;&#x4E0B;&#x5212;&#x7EBF;
+\s  &#x5339;&#x914D;&#x4EFB;&#x610F;&#x7684;&#x7A7A;&#x767D;&#x7B26;
+\d  &#x5339;&#x914D;&#x6570;&#x5B57;
+\n  &#x5339;&#x914D;&#x4E00;&#x4E2A;&#x6362;&#x884C;&#x7B26;
+\t  &#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5236;&#x8868;&#x7B26;
+
+^   &#x5339;&#x914D;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5F00;&#x59CB;
+$   &#x5339;&#x914D;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x7ED3;&#x5C3E;
+
+\W  &#x5339;&#x914D;&#x975E;&#x5B57;&#x6BCD;&#x6216;&#x6570;&#x5B57;&#x6216;&#x4E0B;&#x5212;&#x7EBF;
+\D  &#x5339;&#x914D;&#x975E;&#x6570;&#x5B57;
+\S  &#x5339;&#x914D;&#x975E;&#x7A7A;&#x767D;&#x7B26;
+a|b &#x5339;&#x914D;&#x5B57;&#x7B26;a&#x6216;&#x5B57;&#x7B26;b
+()  &#x5339;&#x914D;&#x62EC;&#x53F7;&#x5185;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4E5F;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x7EC4;
+[...]   &#x5339;&#x914D;&#x5B57;&#x7B26;&#x7EC4;&#x4E2D;&#x7684;&#x5B57;&#x7B26;
+[^...]  &#x5339;&#x914D;&#x9664;&#x4E86;&#x5B57;&#x7B26;&#x7EC4;&#x4E2D;&#x5B57;&#x7B26;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;
+
+
+2. &#x91CF;&#x8BCD;&#xFF1A;&#x63A7;&#x5236;&#x524D;&#x9762;&#x7684;&#x5143;&#x5B57;&#x7B26;&#x51FA;&#x73B0;&#x7684;&#x6B21;&#x6570;
+
+
+*       &#x91CD;&#x590D;&#x96F6;&#x6B21;&#x6216;&#x66F4;&#x591A;&#x6B21;
++       &#x91CD;&#x590D;&#x4E00;&#x6B21;&#x6216;&#x66F4;&#x591A;&#x6B21;
+&#xFF1F;      &#x91CD;&#x590D;&#x96F6;&#x6B21;&#x6216;&#x4E00;&#x6B21;
+{n}     &#x91CD;&#x590D;n&#x6B21;
+{n&#xFF0C;}   &#x91CD;&#x590D;n&#x6B21;&#x8D27;&#x66F4;&#x591A;&#x6B21;
+
+3. &#x8D2A;&#x5A6A;&#x5339;&#x914D;&#x548C;&#x60F0;&#x6027;&#x5339;&#x914D;
+
+.*  &#x8D2A;&#x5A6A;&#x5339;&#x914D;
+.*? &#x975E;&#x8D2A;&#x5A6A;&#x5339;&#x914D;
+
+&apos;&apos;&apos;</span>
+</code></pre>
+<pre><code class="lang-python">
+<span class="hljs-keyword">import</span> re
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_dot</span><span class="hljs-params">()</span>:</span>
+    data1 = <span class="hljs-string">&apos;hello \
+world&apos;</span>
+    pattern = re.compile(<span class="hljs-string">r&apos;.+&apos;</span>)
+    res_list = pattern.findall(data1)
+    <span class="hljs-keyword">assert</span> <span class="hljs-string">&apos;hello world&apos;</span> == res_list[<span class="hljs-number">0</span>], <span class="hljs-string">&apos;re dot error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_dot2</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># &#x6709;&#x65F6;&#x5019;&#x9700;&#x8981; . &#x80FD;&#x5339;&#x914D;&#x6240;&#x6709;&#x5B57;&#x7B26;,&#x5305;&#x62EC;&#x6362;&#x884C;&#x7B26;, &#x5C31;&#x9700;&#x8981;&#x5E26;&#x4E0A;&#x53C2;&#x6570; re.S</span>
+    data1 = <span class="hljs-string">&apos;&lt;input name=&quot;hello \
+world&quot;&gt;&apos;</span>
+    <span class="hljs-comment"># (.+) &#x62EC;&#x53F7;&#x8BF4;&#x660E;: &#x6B63;&#x5E38;&#x4F1A;&#x53D6;&#x6574;&#x4E2A;&lt;input name=&quot;(.+)&quot;&gt;,&#x52A0;&#x62EC;&#x53F7;&#x4E4B;&#x540E;,&#x5C31;&#x53EA;&#x53D6;&#x62EC;&#x53F7;&#x91CC;&#x9762;&#x7684;&#x4E86;</span>
+    ptn = re.compile(<span class="hljs-string">r&apos;&lt;input name=&quot;(.+)&quot;&gt;&apos;</span>, re.S)
+    res_list = ptn.findall(data1)
+    <span class="hljs-keyword">assert</span> <span class="hljs-string">&apos;hello \
+world&apos;</span> == res_list[<span class="hljs-number">0</span>], <span class="hljs-string">&apos;re dot 2 error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_w</span><span class="hljs-params">()</span>:</span>
+    data1 = <span class="hljs-string">&apos;ab_@.121&apos;</span>
+    <span class="hljs-comment"># + &#x8868;&#x793A;&#x91CD;&#x590D;&#x4E00;&#x6B21;&#x6216;&#x8005;&#x66F4;&#x591A;&#x6B21;,&#x5C31;&#x662F;&#x8BF4;&#x5982;&#x679C;&#x6761;&#x4EF6;&#x4E00;&#x76F4;&#x7B26;&#x5408;&#x7684;&#x8BDD;,&#x5C31;&#x8054;&#x7CFB;&#x8F93;&#x51FA;,&#x6BD4;&#x5982;:ab_</span>
+    ptn = re.compile(<span class="hljs-string">r&apos;\w+&apos;</span>)
+    res_list = ptn.findall(data1)
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos;ab_&apos;</span>, <span class="hljs-string">&apos;121&apos;</span>] == res_list, <span class="hljs-string">&apos;re w error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_s</span><span class="hljs-params">()</span>:</span>
+    data1 = <span class="hljs-string">&apos;a b\tc\n d$#&apos;</span>
+    ptn = re.compile(<span class="hljs-string">r&apos;\s+&apos;</span>)
+    res_list = ptn.findall(data1)
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos; &apos;</span>, <span class="hljs-string">&apos;\t&apos;</span>, <span class="hljs-string">&apos;\n &apos;</span>] == res_list, <span class="hljs-string">&apos;re s error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_d</span><span class="hljs-params">()</span>:</span>
+    data1 = <span class="hljs-string">&apos;yidong 10086,liantong 10010&apos;</span>
+    ptn = re.compile(<span class="hljs-string">r&apos;\d+&apos;</span>)
+    res_list = ptn.findall(data1)
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos;10086&apos;</span>, <span class="hljs-string">&apos;10010&apos;</span>] == res_list, <span class="hljs-string">&apos;re d error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_start</span><span class="hljs-params">()</span>:</span>
+    data1 = <span class="hljs-string">&apos;ab1ab2&apos;</span>
+    ptn = re.compile(<span class="hljs-string">r&apos;ab\d&apos;</span>)
+    res_list = ptn.findall(data1)
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos;ab1&apos;</span>, <span class="hljs-string">&apos;ab2&apos;</span>] == res_list, <span class="hljs-string">&apos;re ^ error&apos;</span>
+
+    <span class="hljs-comment"># ^ &#x8868;&#x793A;&#x53EA;&#x5339;&#x914D;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5F00;&#x59CB;</span>
+    data1 = <span class="hljs-string">&apos;ab1ab2&apos;</span>
+    ptn = re.compile(<span class="hljs-string">r&apos;^ab\d&apos;</span>)
+    res_list = ptn.findall(data1)
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos;ab1&apos;</span>] == res_list, <span class="hljs-string">&apos;re ^ 2 error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_end</span><span class="hljs-params">()</span>:</span>
+    data1 = <span class="hljs-string">&apos;1ab2ab&apos;</span>
+    ptn = re.compile(<span class="hljs-string">r&apos;\dab$&apos;</span>)
+    res_list = ptn.findall(data1)
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos;2ab&apos;</span>] == res_list, <span class="hljs-string">&apos;re $ error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_and</span><span class="hljs-params">()</span>:</span>
+    data1 = <span class="hljs-string">&apos;12a_3$dc&apos;</span>
+    ptn = re.compile(<span class="hljs-string">r&apos;\d+|a|d|c&apos;</span>)
+    res_list = ptn.findall(data1)
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos;12&apos;</span>, <span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;3&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>] == res_list, <span class="hljs-string">&apos;re | error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_bracket</span><span class="hljs-params">()</span>:</span>
+    data1 = <span class="hljs-string">&apos;&lt;input id=&quot;1&quot; name=&quot;xiaoxinmiao&quot;/&gt;&apos;</span>
+    ptn = re.compile(<span class="hljs-string">r&apos;&lt;input id=&quot;(\d+)&quot; name=&quot;(.+)&quot;/&gt;&apos;</span>)
+    res_list = ptn.findall(data1)
+    <span class="hljs-keyword">assert</span> (<span class="hljs-string">&apos;1&apos;</span>, <span class="hljs-string">&apos;xiaoxinmiao&apos;</span>) == res_list[<span class="hljs-number">0</span>], <span class="hljs-string">&apos;re () error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_bracket2</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># &#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5206;&#x7EC4;&#x540D;</span>
+    data1 = <span class="hljs-string">&apos;&lt;input id=&quot;1&quot; name=&quot;xiaoxinmiao&quot;/&gt;&apos;</span>
+    ptn = re.compile(<span class="hljs-string">r&apos;&lt;input id=&quot;(?P&lt;id&gt;.*?)&quot; name=&quot;(?P&lt;name&gt;.*?)&quot;/&gt;&apos;</span>)
+    iter_obj = ptn.finditer(data1)
+    res_obj = iter_obj.__next__()
+    <span class="hljs-keyword">assert</span> <span class="hljs-string">&apos;1&apos;</span> == res_obj.group(
+        <span class="hljs-string">&apos;id&apos;</span>) <span class="hljs-keyword">and</span> <span class="hljs-string">&apos;xiaoxinmiao&apos;</span> == res_obj.group(<span class="hljs-string">&apos;name&apos;</span>), <span class="hljs-string">&apos;re () error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_bracket3</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># &#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5206;&#x7EC4;&#x540D;</span>
+    data1 = <span class="hljs-string">&apos;&lt;input class=&quot;c1&quot; id=&quot;1&quot; name=&quot;miao1&quot;/&gt;&lt;input class=&quot;c2&quot; id=&quot;2&quot; name=&quot;miao2&quot;/&gt;&apos;</span>
+    ptn = re.compile(
+        <span class="hljs-string">r&apos;&lt;input class=&quot;.*?&quot; id=&quot;(?P&lt;id&gt;.*?)&quot; name=&quot;(?P&lt;name&gt;.*?)&quot;/&gt;&apos;</span>)
+    iter_obj = ptn.finditer(data1)
+    ids, names = [], []
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> iter_obj:
+        ids.append(i.group(<span class="hljs-string">&apos;id&apos;</span>))
+        names.append(i.group(<span class="hljs-string">&apos;name&apos;</span>))
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos;1&apos;</span>, <span class="hljs-string">&apos;2&apos;</span>] == ids <span class="hljs-keyword">and</span> [<span class="hljs-string">&apos;miao1&apos;</span>, <span class="hljs-string">&apos;miao2&apos;</span>] == names, <span class="hljs-string">&apos;re () error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_bracket_mid</span><span class="hljs-params">()</span>:</span>
+    data1 = <span class="hljs-string">&apos;12dss#$$fwe564_&apos;</span>
+    ptn = re.compile(<span class="hljs-string">r&apos;[1-9a-z_$]+&apos;</span>)
+    res_list = ptn.findall(data1)
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos;12dss&apos;</span>, <span class="hljs-string">&apos;$$fwe564_&apos;</span>] == res_list, <span class="hljs-string">&apos;re [] error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_bracket_mid2</span><span class="hljs-params">()</span>:</span>
+    data1 = <span class="hljs-string">&apos;12dss#$$fwe564_&apos;</span>
+    <span class="hljs-comment"># [^] &#x8868;&#x793A;&#x4E0D;&#x5339;&#x914D;&#x91CC;&#x9762;&#x7684;&#x4EFB;&#x4F55;&#x6570;</span>
+    ptn = re.compile(<span class="hljs-string">r&apos;[^1-9a-z_$]+&apos;</span>)
+    res_list = ptn.findall(data1)
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos;#&apos;</span>] == res_list, <span class="hljs-string">&apos;re [] error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_star</span><span class="hljs-params">()</span>:</span>
+    data1 = <span class="hljs-string">&apos;&lt;input id=&quot;&quot; name=&quot;&quot;/&gt;&apos;</span>
+    <span class="hljs-comment"># &#x8FD9;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x671F;&#x5F85;&#x7684;&#x7ED3;&#x679C;</span>
+    res_list = re.findall(<span class="hljs-string">r&apos;&lt;input id=&quot;(.+?)&quot; name=&quot;(.+?)&quot;/&gt;&apos;</span>, data1, re.S)
+    <span class="hljs-keyword">assert</span> [] == res_list, <span class="hljs-string">&apos;re + error&apos;</span>
+
+    <span class="hljs-comment"># &#x8FD9;&#x662F;&#x6211;&#x4EEC;&#x671F;&#x5F85;&#x7684;&#x7ED3;&#x679C;,&#x505A;&#x4E86;&#x4E24;&#x4E2A;&#x5206;&#x7EC4;,&#x5C31;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x4E24;&#x7EC4;&#x6570;&#x636E;</span>
+    res_list = re.findall(<span class="hljs-string">r&apos;&lt;input id=&quot;(.*?)&quot; name=&quot;(.*?)&quot;/&gt;&apos;</span>, data1, re.S)
+    <span class="hljs-keyword">assert</span> (<span class="hljs-string">&apos;&apos;</span>, <span class="hljs-string">&apos;&apos;</span>) == res_list[<span class="hljs-number">0</span>], <span class="hljs-string">&apos;re + error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_star2</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># .* &#x8D2A;&#x5A6A;</span>
+    data1 = <span class="hljs-string">&apos;&#x6211;&#x7231;&#x5317;&#x4EAC;&#x5929;&#x5B89;&#x95E8;,&#x5929;&#x5B89;&#x95E8;&#x4E0A;&#x592A;&#x9633;&#x5347;.&apos;</span>
+    res_list = re.findall(<span class="hljs-string">r&apos;&#x6211;&#x7231;(.*)&#x5929;&#x5B89;&#x95E8;&apos;</span>, data1)
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos;&#x5317;&#x4EAC;&#x5929;&#x5B89;&#x95E8;,&apos;</span>] == res_list, <span class="hljs-string">&apos;re .* error&apos;</span>
+    <span class="hljs-comment"># .*? &#x975E;&#x8D2A;&#x5A6A;</span>
+    res_list = re.findall(<span class="hljs-string">r&apos;&#x6211;&#x7231;(.*?)&#x5929;&#x5B89;&#x95E8;&apos;</span>, data1)
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos;&#x5317;&#x4EAC;&apos;</span>] == res_list, <span class="hljs-string">&apos;re .* error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_bracket_big</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># &#x53EA;&#x6709;&#x4E24;&#x4F4D;&#x6570;&#x5B57;&#x624D;&#x7B26;&#x5408;&#x8981;&#x6C42;</span>
+    data1 = <span class="hljs-string">&apos;a1b12c134d1234e&apos;</span>
+    res_list = re.findall(<span class="hljs-string">r&apos;\d{2}&apos;</span>, data1)
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos;12&apos;</span>, <span class="hljs-string">&apos;13&apos;</span>, <span class="hljs-string">&apos;12&apos;</span>, <span class="hljs-string">&apos;34&apos;</span>] == res_list, <span class="hljs-string">r&apos;re {} error&apos;</span>
+    <span class="hljs-comment"># &#x4E24;&#x4F4D;,&#x4EE5;&#x53CA;&#x4E24;&#x4F4D;&#x4EE5;&#x4E0A;&#x7684;&#x6570;&#x5B57;&#x90FD;&#x7B26;&#x5408;&#x8981;&#x6C42;</span>
+    data1 = <span class="hljs-string">&apos;a1b12c134d1234e&apos;</span>
+    res_list = re.findall(<span class="hljs-string">r&apos;\d{2,}&apos;</span>, data1)
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos;12&apos;</span>, <span class="hljs-string">&apos;134&apos;</span>, <span class="hljs-string">&apos;1234&apos;</span>] == res_list, <span class="hljs-string">r&apos;re {} error&apos;</span>
+</code></pre>
+<h2 id="&#x66FF;&#x6362;&#x548C;&#x62C6;&#x5206;">&#x66FF;&#x6362;&#x548C;&#x62C6;&#x5206;</h2>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> re
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_split</span><span class="hljs-params">()</span>:</span>
+    data1 = <span class="hljs-string">&apos;you     are \
+        the best&apos;</span>
+    res_list=re.split(<span class="hljs-string">r&apos;\s+&apos;</span>,data1)
+    <span class="hljs-keyword">assert</span> [<span class="hljs-string">&apos;you&apos;</span>,<span class="hljs-string">&apos;are&apos;</span>,<span class="hljs-string">&apos;the&apos;</span>,<span class="hljs-string">&apos;best&apos;</span>]==res_list,<span class="hljs-string">&apos;re split error&apos;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_sub</span><span class="hljs-params">()</span>:</span>
+    data1 =<span class="hljs-string">&apos;my mobile is 15811112222&apos;</span>
+    num = re.sub(<span class="hljs-string">r&apos;^.*is &apos;</span>,<span class="hljs-string">&apos;&apos;</span>,data1)
+    <span class="hljs-keyword">assert</span> <span class="hljs-string">&apos;15811112222&apos;</span>==num,<span class="hljs-string">&apos;re sub error&apos;</span>
+
+    num = re.sub(<span class="hljs-string">r&apos;\D+&apos;</span>,<span class="hljs-string">&apos;&apos;</span>,data1)
+    <span class="hljs-keyword">assert</span> <span class="hljs-string">&apos;15811112222&apos;</span>==num,<span class="hljs-string">&apos;re sub error&apos;</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_sub2</span><span class="hljs-params">()</span>:</span>
+    data1 = <span class="hljs-string">&apos;a:1,b:2,c:3&apos;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">multi</span><span class="hljs-params">(matched)</span>:</span>
+        v = int(matched.group())
+        <span class="hljs-keyword">return</span> str(v*<span class="hljs-number">2</span>)
+
+    res=re.sub(<span class="hljs-string">r&apos;\d+&apos;</span>,multi,data1)
+    <span class="hljs-keyword">assert</span> <span class="hljs-string">&apos;a:2,b:4,c:6&apos;</span>==res,<span class="hljs-string">&apos;re sub2 error&apos;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../set/m1.html" class="navigation navigation-prev " aria-label="Previous page: 集合">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../serialize/m1.html" class="navigation navigation-next " aria-label="Next page: 序列化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"正则","level":"1.6.9","depth":2,"next":{"title":"序列化","level":"1.6.10","depth":2,"path":"python/serialize/m1.md","ref":"python/serialize/m1.md","articles":[]},"previous":{"title":"集合","level":"1.6.8","depth":2,"path":"python/set/m1.md","ref":"python/set/m1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","disqus","toggle-chapters","chapter-fold","search-pro","code","splitter","github","donate"],"ignores":["_book","node_modules"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"disqus":{"useIdentifier":false,"shortName":"relax-space"},"github":{"url":"https://github.com/relax-space"},"splitter":{},"search-pro":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"donate":{"alipay":"https://relax.elandcloud.com/resource/barcode/a1.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://relax.elandcloud.com/resource/barcode/w1.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"relax space <xiaoxm_001@outlook.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"relax space","language":"zh-hans","gitbook":"3.2.3","description":"relax space"},"file":{"path":"python/re/m1.md","mtime":"2022-09-20T17:14:05.987Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-20T17:15:01.763Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

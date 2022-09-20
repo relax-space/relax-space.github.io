@@ -1,0 +1,966 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>rocketmq · relax space</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="relax space <xiaoxm_001@outlook.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../tool/" />
+    
+    
+    <link rel="prev" href="../mysql/m1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    relax-space
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    技术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../mysql/m1.html">
+            
+                <a href="../mysql/m1.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="m1.html">
+            
+                <a href="m1.html">
+            
+                    
+                    rocketmq
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../tool/">
+            
+                <a href="../../tool/">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../tool/git/m1.html">
+            
+                <a href="../../tool/git/m1.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../tool/git/rebase/m1.html">
+            
+                <a href="../../tool/git/rebase/m1.html">
+            
+                    
+                    rebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../tool/idea/m1.html">
+            
+                <a href="../../tool/idea/m1.html">
+            
+                    
+                    idea
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../tool/idea/jrebel/m1.html">
+            
+                <a href="../../tool/idea/jrebel/m1.html">
+            
+                    
+                    jrebel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../tool/idea/git/m1.html">
+            
+                <a href="../../tool/idea/git/m1.html">
+            
+                    
+                    git本地改变
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../tool/navicat/m1.html">
+            
+                <a href="../../tool/navicat/m1.html">
+            
+                    
+                    navicat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../tool/system/m1.html">
+            
+                <a href="../../tool/system/m1.html">
+            
+                    
+                    system
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../tool/system/proxy/m1.html">
+            
+                <a href="../../tool/system/proxy/m1.html">
+            
+                    
+                    代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../../tool/system/ssh/m1.html">
+            
+                <a href="../../tool/system/ssh/m1.html">
+            
+                    
+                    ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../../tool/system/hotkey.html">
+            
+                <a href="../../tool/system/hotkey.html">
+            
+                    
+                    快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../tool/vscode/m1.html">
+            
+                <a href="../../tool/vscode/m1.html">
+            
+                    
+                    vscode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../../tool/vscode/case/m1.html">
+            
+                <a href="../../tool/vscode/case/m1.html">
+            
+                    
+                    大小写快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../../tool/vscode/proxy/m1.html">
+            
+                <a href="../../tool/vscode/proxy/m1.html">
+            
+                    
+                    代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../tool/windows/m1.html">
+            
+                <a href="../../tool/windows/m1.html">
+            
+                    
+                    windows
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../../tool/windows/ipSwitch/m1.html">
+            
+                <a href="../../tool/windows/ipSwitch/m1.html">
+            
+                    
+                    ip切换工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../../tool/windows/pin/m1.html">
+            
+                <a href="../../tool/windows/pin/m1.html">
+            
+                    
+                    pin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../../tool/windows/time/m1.html">
+            
+                <a href="../../tool/windows/time/m1.html">
+            
+                    
+                    自动同步时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../docker/">
+            
+                <a href="../../docker/">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../docker/it/m1.html">
+            
+                <a href="../../docker/it/m1.html">
+            
+                    
+                    it命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../java/">
+            
+                <a href="../../java/">
+            
+                    
+                    java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../java/maven/m1.html">
+            
+                <a href="../../java/maven/m1.html">
+            
+                    
+                    maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../java/fastjson/m1.html">
+            
+                <a href="../../java/fastjson/m1.html">
+            
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../java/base1/m1.html">
+            
+                <a href="../../java/base1/m1.html">
+            
+                    
+                    基础1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../python/">
+            
+                <a href="../../python/">
+            
+                    
+                    python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../python/source/m1.html">
+            
+                <a href="../../python/source/m1.html">
+            
+                    
+                    清华源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../python/zone/m1.html">
+            
+                <a href="../../python/zone/m1.html">
+            
+                    
+                    时区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../python/email/m1.html">
+            
+                <a href="../../python/email/m1.html">
+            
+                    
+                    邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../python/str/m1.html">
+            
+                <a href="../../python/str/m1.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../python/param/m1.html">
+            
+                <a href="../../python/param/m1.html">
+            
+                    
+                    参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../python/dict/m1.html">
+            
+                <a href="../../python/dict/m1.html">
+            
+                    
+                    字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../../python/list/m1.html">
+            
+                <a href="../../python/list/m1.html">
+            
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../../python/set/m1.html">
+            
+                <a href="../../python/set/m1.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../../python/re/m1.html">
+            
+                <a href="../../python/re/m1.html">
+            
+                    
+                    正则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../../python/serialize/m1.html">
+            
+                <a href="../../python/serialize/m1.html">
+            
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../../python/pypy/m1.html">
+            
+                <a href="../../python/pypy/m1.html">
+            
+                    
+                    pypy安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../golang/">
+            
+                <a href="../../golang/">
+            
+                    
+                    golang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../golang/hello/m1.html">
+            
+                <a href="../../golang/hello/m1.html">
+            
+                    
+                    hello
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../golang/speed/m1.html">
+            
+                <a href="../../golang/speed/m1.html">
+            
+                    
+                    加速
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../golang/hello-mod/m1.html">
+            
+                <a href="../../golang/hello-mod/m1.html">
+            
+                    
+                    hello-mod
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../vip/">
+            
+                <a href="../../vip/">
+            
+                    
+                    vip
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >rocketmq</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4ECB;&#x7ECD;&#x4E00;&#x4E9B;&#x6982;&#x5FF5;">&#x4ECB;&#x7ECD;&#x4E00;&#x4E9B;&#x6982;&#x5FF5;</h1>
+<h1 id="topic">Topic</h1>
+<p>&#x4E00;&#x7EA7;&#x6D88;&#x606F;&#x7C7B;&#x578B;</p>
+<h1 id="tag">tag</h1>
+<p>&#x5728;Topic&#x7C7B;&#x522B;&#x4E0B;&#x7684;&#x4E8C;&#x7EA7;&#x5B50;&#x7C7B;&#x522B;</p>
+<h1 id="group">Group</h1>
+<p>Producer Group&#xFF08;&#x751F;&#x4EA7;&#x8005;&#x7EC4;&#xFF09;
+Consumer Group&#xFF08;&#x6D88;&#x8D39;&#x8005;&#x7EC4;&#xFF09;</p>
+<p>&#x4E3E;&#x51E0;&#x4E2A;&#x4F8B;&#x5B50;&#x7B80;&#x5355;&#x8BF4;&#x4E00;&#x4E0B;&#x4F7F;&#x7528;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x4F8B;&#x5B50;&#x5BF9;&#x8C61;</th>
+<th>&#x8868;&#x5934;</th>
+<th>produce&#x914D;&#x7F6E;</th>
+<th>consume&#x914D;&#x7F6E;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Topic&#x4F8B;&#x5B50;</td>
+<td>&#x53EA;&#x533A;&#x5206;topic&#x7684;&#x6A21;&#x5F0F;</td>
+<td>Topic&#xFF1A;fruit<br>Tag&#xFF1A;all<br>groupId&#xFF1A;any</td>
+<td>Topic&#xFF1A;fruit<br>Tag&#xFF1A;all<br>groupId&#xFF1A;any</td>
+<td>&#x751F;&#x4EA7;&#x8005;&#xFF1A;&#x53D1;&#x9001;&#x6C34;&#x679C;<br>&#x63A5;&#x6536;&#x8005;&#xFF1A;&#x63A5;&#x6536;&#x6240;&#x6709;&#x6D88;&#x606F;&#xFF08;&#x6240;&#x6709;&#x6C34;&#x679C;&#xFF09;</td>
+</tr>
+<tr>
+<td>Tag&#x4F8B;&#x5B50;</td>
+<td>&#x4F1A;&#x533A;&#x5206;tag</td>
+<td>Topic&#xFF1A;fruit<br>Tag&#xFF1A;apple&amp;&amp;pear<br>groupId&#xFF1A;any</td>
+<td>Topic&#xFF1A;fruit<br>Tag&#xFF1A;apple<br>groupId&#xFF1A;any<br><br>Topic&#xFF1A;fruit<br>Tag&#xFF1A;pear<br>groupId&#xFF1A;any<br><br>Topic&#xFF1A;fruit<br>Tag&#xFF1A;apple&amp;&amp;pear<br>groupId&#xFF1A;any</td>
+<td>&#x751F;&#x4EA7;&#x8005;&#xFF1A;&#x53D1;&#x9001;&#x6C34;&#x679C;&#xFF08;&#x53EA;&#x53D1;&#x9001;&#x82F9;&#x679C;&#x548C;&#x68A8;&#x5B50;&#xFF09;<br>&#x63A5;&#x6536;&#x8005;&#xFF1A;<br>&#x25CF; &#x53EA;&#x6709;1&#x4E2A;&#x63A5;&#x53D7;&#x8005;&#xFF1A;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x53EA;&#x63A5;&#x53D7;apple&#xFF0C;&#x6216;&#x53EA;&#x63A5;&#x6536;pear<br>&#x25CF; &#x6709;&#x591A;&#x4E2A;&#x63A5;&#x53D7;&#x8005;&#xFF1A;&#x5FC5;&#x987B;&#x4FDD;&#x8BC1;&#x591A;&#x4E2A;&#x63A5;&#x53D7;&#x8005;&#x7684;tag&#x4E00;&#x81F4;&#xFF0C;&#x8981;&#x4E48;&#x90FD;&#x63A5;&#x53D7;apple&#xFF0C;&#x8981;&#x4E48;&#x90FD;&#x63A5;&#x53D7;pear&#xFF0C;&#x8981;&#x4E48;&#x90FD;&#x63A5;&#x53D7;apple&#x548C;pear</td>
+</tr>
+<tr>
+<td>group&#x4F8B;&#x5B50;</td>
+<td>&#x4F1A;&#x533A;&#x5206;groupId&#xFF0C;&#x4E24;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x63A5;&#x6536;&#x540C;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#x3002;&#x5047;&#x5982;&#x4E24;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x7684;groupId&#x4E00;&#x6837;&#xFF0C;&#x90A3;&#x4E48;&#x6700;&#x7EC8;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x80FD;&#x6D88;&#x8D39;&#x5230;&#x6D88;&#x606F;,&#x5982;&#x679C;groupId&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x5219;&#x4E24;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x90FD;&#x80FD;&#x63A5;&#x6536;&#x5230;&#x6D88;&#x606F;</td>
+<td>Topic&#xFF1A;fruit<br>Tag&#xFF1A;apple<br>groupId&#xFF1A;abc</td>
+<td>Topic&#xFF1A;fruit<br>Tag&#xFF1A;apple<br>groupId&#xFF1A;c1<br><br>Topic&#xFF1A;fruit<br>Tag&#xFF1A;apple<br>groupId&#xFF1A;c2</td>
+<td>&#x751F;&#x4EA7;&#x8005;&#xFF1A;&#x53D1;&#x9001;&#x82F9;&#x679C;<br>&#x63A5;&#x6536;&#x8005;1&#xFF1A;&#x63A5;&#x6536;&#x82F9;&#x679C;<br>&#x63A5;&#x6536;&#x8005;2&#xFF1A;&#x4E5F;&#x63A5;&#x6536;&#x82F9;&#x679C;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../mysql/m1.html" class="navigation navigation-prev " aria-label="Previous page: mysql">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../tool/" class="navigation navigation-next " aria-label="Next page: 工具">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"rocketmq","level":"1.2.2","depth":2,"next":{"title":"工具","level":"1.3","depth":1,"path":"tool/index.md","ref":"tool/index.md","articles":[{"title":"git","level":"1.3.1","depth":2,"path":"tool/git/m1.md","ref":"tool/git/m1.md","articles":[{"title":"rebase","level":"1.3.1.1","depth":3,"path":"tool/git/rebase/m1.md","ref":"tool/git/rebase/m1.md","articles":[]}]},{"title":"idea","level":"1.3.2","depth":2,"path":"tool/idea/m1.md","ref":"tool/idea/m1.md","articles":[{"title":"jrebel","level":"1.3.2.1","depth":3,"path":"tool/idea/jrebel/m1.md","ref":"tool/idea/jrebel/m1.md","articles":[]},{"title":"git本地改变","level":"1.3.2.2","depth":3,"path":"tool/idea/git/m1.md","ref":"tool/idea/git/m1.md","articles":[]}]},{"title":"navicat","level":"1.3.3","depth":2,"path":"tool/navicat/m1.md","ref":"tool/navicat/m1.md","articles":[]},{"title":"system","level":"1.3.4","depth":2,"path":"tool/system/m1.md","ref":"tool/system/m1.md","articles":[{"title":"代理","level":"1.3.4.1","depth":3,"path":"tool/system/proxy/m1.md","ref":"tool/system/proxy/m1.md","articles":[]},{"title":"ssh","level":"1.3.4.2","depth":3,"path":"tool/system/ssh/m1.md","ref":"tool/system/ssh/m1.md","articles":[]},{"title":"快捷键","level":"1.3.4.3","depth":3,"path":"tool/system/hotkey.md","ref":"tool/system/hotkey.md","articles":[]}]},{"title":"vscode","level":"1.3.5","depth":2,"path":"tool/vscode/m1.md","ref":"tool/vscode/m1.md","articles":[{"title":"大小写快捷键","level":"1.3.5.1","depth":3,"path":"tool/vscode/case/m1.md","ref":"tool/vscode/case/m1.md","articles":[]},{"title":"代理","level":"1.3.5.2","depth":3,"path":"tool/vscode/proxy/m1.md","ref":"tool/vscode/proxy/m1.md","articles":[]}]},{"title":"windows","level":"1.3.6","depth":2,"path":"tool/windows/m1.md","ref":"tool/windows/m1.md","articles":[{"title":"ip切换工具","level":"1.3.6.1","depth":3,"path":"tool/windows/ipSwitch/m1.md","ref":"tool/windows/ipSwitch/m1.md","articles":[]},{"title":"pin","level":"1.3.6.2","depth":3,"path":"tool/windows/pin/m1.md","ref":"tool/windows/pin/m1.md","articles":[]},{"title":"自动同步时间","level":"1.3.6.3","depth":3,"path":"tool/windows/time/m1.md","ref":"tool/windows/time/m1.md","articles":[]}]}]},"previous":{"title":"mysql","level":"1.2.1","depth":2,"path":"tech/mysql/m1.md","ref":"tech/mysql/m1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","disqus","toggle-chapters","chapter-fold","search-pro","code","splitter","github","donate"],"ignores":["_book","node_modules"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"disqus":{"useIdentifier":false,"shortName":"relax-space"},"github":{"url":"https://github.com/relax-space"},"splitter":{},"search-pro":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"donate":{"alipay":"https://relax.elandcloud.com/resource/barcode/a1.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://relax.elandcloud.com/resource/barcode/w1.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"relax space <xiaoxm_001@outlook.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"relax space","language":"zh-hans","gitbook":"3.2.3","description":"relax space"},"file":{"path":"tech/rocketmq/m1.md","mtime":"2022-09-20T17:14:06.003Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-20T17:15:01.763Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

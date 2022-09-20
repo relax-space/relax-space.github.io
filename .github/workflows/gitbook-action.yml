@@ -1,0 +1,60 @@
+name: gitbook-action
+on:                                 #在master分支上进行push时触发  
+  push:
+    branches:
+    - master
+
+jobs:
+  build-push:
+    runs-on: ubuntu-latest
+        
+    steps:                          
+    - name: checkout master
+      uses: actions/checkout@v2
+      with:
+        ref: master
+            
+    - name: install nodejs
+      uses: actions/setup-node@v1
+      
+    - name: configue gitbook
+      run: |
+        npm install -g gitbook-cli          
+        gitbook install
+                
+    - name: generate _book folder
+      run: |
+        gitbook build
+        cp README.md _book
+                
+    - name: deploy _book to relax-space.github.io
+      env:
+        TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
+        REF_GITHUB: github.com/relax-space/relax-space.github.io         # 记得修改为自己的目标版本库
+        MYEMAIL: xiaoxm_001@outlook.com                               # 记得修改为自己邮箱
+        MYNAME: relax-admin          
+      run: |
+        cd _book
+        git config --global user.email "${MYEMAIL}"
+        git config --global user.name "${MYNAME}"
+        git init
+        git remote add origin https://${REF_GITHUB}
+        git add . 
+        git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
+        git branch -M master
+        git push --force --quiet "https://${TOKEN_GITHUB}@${REF_GITHUB}" master
+    
+    - name: deploy _book to relax-space.gitee.io
+      env:
+          PWD_GITEE: ${{ secrets.PWD_GITEE }}
+          REF_GITEE: gitee.com/relax-space/relax-space         # 记得修改为自己的目标版本库
+          MYEMAIL: xiaoxm_001@outlook.com                               # 记得修改为自己邮箱
+          MYNAME: relax-admin          
+      run: |
+        cd _book
+        git config user.email "${MYEMAIL}"
+        git config user.name "${MYNAME}"
+        git add . 
+        git commit --amend -m "Updated gitee By Github Actions"
+        git branch -M master
+        git push --force --quiet "https://xiaoxm_001:${PWD_GITEE}@${REF_GITEE}" master
